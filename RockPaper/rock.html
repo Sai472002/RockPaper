@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+    <script src="../../bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/40b84db41b.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            font-family: Montserrat;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body class="bg-dark-subtle">
+    <div class="container-fluid fs-3 text-center text-warning shadow bg-dark p-3">
+        ROCK PAPER SCISSOR
+    </div>
+    <div class="full shadow rounded-4 mx-auto bg-warning" style="height:250px; width:400px">
+        <div class="container-fluid border-3 mt-4 mb-4 d-flex text-center">
+            <div class=" border-end-0 fs-3 ms-auto fw-medium mt-5" style="width:120px; height:150px ">YOU
+                <p class="h-75 d-flex fs-1 fw-bold justify-content-center align-items-center" id="user">0</p>
+            </div>
+            <div class=" border-start-0 fs-3 me-auto fw-medium mt-5" style="width:120px; height:150px">PC
+                <p class="h-75 d-flex fs-1 fw-bold justify-content-center align-items-center" id="pc">0</p>
+            </div>
+        </div>
+        <p class="bg-darktext-white text-center fs-4 mb-5 fw-medium" id="winner"></p>
+        </div>
+        <div class="d-flex justify-content-between text-center mx-auto" style="width: 350px; margin-top:40px;">
+            <div class="cont p-2 border rounded-5 bg-warning shadow"><button class="btn border-0" id="bt1"><i class="fa-solid fa-hand-back-fist fs-1"></i></button></div>
+            <div class="cont p-2 border rounded-5 bg-warning shadow"><button class="btn border-0" id="bt2"><i class="fa-solid fa-hand fs-1"></i></button></div>
+            <div class="cont p-2 border rounded-5 bg-warning shadow"><button class="btn border-0" id="bt3"><i class="fa-solid fa-hand-scissors fs-1"></i></button></div>
+        </div>
+    </div>
+    <script src="./rock.js"></script>
+</body>
+
+</html>
