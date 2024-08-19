@@ -14,6 +14,9 @@ This is a simple Rock, Paper, Scissors game implemented using HTML, CSS, and Jav
 - `rock.js`: JavaScript file that contains the logic for the game.
 - `bootstrap-5.3.3-dist/`: Local Bootstrap CSS and JS files (if using locally instead of CDN).
 
+#Livepreview
+-You can view the live version of this project at https://sai472002.github.io/RockPaper/
+
 Dependencies
 - Bootstrap 5.3.3: For styling and responsive design.
 - Font Awesome: For icons used in the buttons.
