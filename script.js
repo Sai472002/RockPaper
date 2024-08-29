@@ -34,10 +34,10 @@
     function winner(res,pchoice,userChoice) {
         if (res === 'user') {
             userSc++;
-            Winner.textContent = `You win! PC chose :${pchoice}`;
+            Winner.textContent = `You win! PC chose : ${pchoice}`;
         } else if (res === 'pc') {
             pcSc++;
-            Winner.textContent = `PC wins! PC chose :- ${userChoice}`;
+            Winner.textContent = `PC wins! PC chose : ${userChoice}`;
         } else {
             Winner.textContent = 'It\'s a draw!';
         }
