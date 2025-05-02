@@ -34,7 +34,7 @@ function winner(res, pchoice, userChoice) {
         Winner.textContent = `You win! PC chose: ${pchoice}`;
     } else if (res === 'pc') {
         pcSc++;
-        Winner.textContent = `PC wins! PC chose: ${userChoice}`;
+        Winner.textContent = `PC wins! PC chose: ${pchoice}`;
     } else {
         Winner.textContent = 'It\'s a draw!';
     }
@@ -42,13 +42,11 @@ function winner(res, pchoice, userChoice) {
     userScore.textContent = userSc;
     pcScore.textContent = pcSc;
 
-    // Check if either player reaches 10 points
+
     if (userSc === 10) {
-        Winner.textContent = "Congratulations! You are the overall winner!";
-        resetGame();
+        showPopup("Congratulations! You are the overall winner!");
     } else if (pcSc === 10) {
-        Winner.textContent = "PC wins the game! Better luck next time!";
-        resetGame();
+        showPopup("PC wins the game! Better luck next time!");
     }
 }
 
@@ -57,4 +55,11 @@ function resetGame() {
     pcSc = 0;
     userScore.textContent = userSc;
     pcScore.textContent = pcSc;
+    Winner.textContent = '';
+}
+
+
+function showPopup(message) {
+    alert(message); 
+    resetGame();
 }
